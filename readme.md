@@ -12,11 +12,12 @@ Asynchronous function queue with adjustable concurrency.
 [![coverage](https://img.shields.io/coveralls/jessetane/queue.svg?style=flat-square&branch=master)](https://coveralls.io/r/jessetane/queue)
 
 #liyong 修改
+``` javascript
   if (this.jobs.length > 0) {
     //liyong 这里start会导致队列函数马上全部执行 next仅仅成为完成后emit的函数
     //this.start();
   }
-
+```
 ## Why
 [Async](https://github.com/caolan/async) is a big library offering various approaches to dealing with asynchrony; `queue` is a small library offering a single, flexible abstraction.
 

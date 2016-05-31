@@ -103,7 +103,8 @@ Queue.prototype.start = function(cb) {
   job(next);
   
   if (this.jobs.length > 0) {
-    this.start();
+    //liyong 这里start会导致队列函数马上全部执行 next仅仅成为完成后emit的函数
+    //this.start();
   }
 };
 
